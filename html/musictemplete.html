@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head><title>music website</title>
+    <style>
+        .nav li {
+
+             float:right;
+             list-style: none;
+             
+
+        }
+        .nav a{
+            
+            padding:15px;
+            color:black;
+            height: 20px;
+            display: block;
+    
+        }
+        .left-col{
+            color:crimson;
+            margin:11%;
+            font-size: 45px;
+            display: flex;
+            align-items: center;
+        }
+        .right-col{
+            float: right;
+            margin-right: 60px;
+            margin-left: 68px;
+            background-color: aqua;
+        }
+        .content{
+            margin: 5px;
+            background-color: aqua;
+        }
+        body{
+            background-color: aqua;
+        }
+
+    
+        
+
+
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <ul class="nav">
+                <li><a href="#" >CONTACTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ARTISITS</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">HOME</a></li>
+            </ul>
+        
+            <div class="content">
+              <div class="left-col">
+                <p><h2>MY SOUNDS</h2></p>
+              </div>
+              <div class="right-col">
+                <p><h2>CLICK HERE TO LISTEN</h2> </p>
+                <img src="C:\Users\Sunitha Neerumalla\Downloads\play.png" id="icon"/>
+                <audio id="mysound">
+                    <source src="C:\Users\Sunitha Neerumalla\Downloads\Morning_Coffee_and_You_-_The_Vow.mp3" type="audio/mp3"/>
+                </audio>
+
+              </div>
+            </div>
+        </div>
+            
+            <script>
+                var mysound=document.getElementById("mysound");
+                var icon=document.getElementById("icon");
+                icon.onclick=function(){
+                    if(mysound.paused)
+                    {
+                        mysound.play();
+                        icon.src="https://media.geeksforgeeks.org/wp-content/uploads/20210402235545/Pause.png"
+                    }
+                    else{
+                        mysound.pause();
+                        icon.src="https://media.geeksforgeeks.org/wp-content/uploads/20210402235520/play.png"
+                    }
+                }
+                
+            </script>
+
+
+                
+            
+        
+    </body>
+</html>
