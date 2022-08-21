@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            .required:after {
+    content:" *";
+    color: red;
+            }
+            body{
+                
+                
+                width: 500px;
+                margin:auto;
+                border:20px solid black;
+               
+               
+                
+            }
+            h2{
+                color:darkblue;
+                display: inline;
+            }
+            div{
+                border:3px solid blue;
+                border-radius: 4px;
+                padding:14px;
+            }
+            input[type="text"],input[type="number"] ,input[type="tel"],textarea{
+              
+                width:400px;
+            }
+            input[type="submit"]{
+                background-color: aqua;
+                border-color: aqua;
+                border-radius: 3px;
+            }
+            label{
+                color:blue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+        <h2 class="header" >XYZ University</h2>
+          <h2>Registration form</h2><br><br>
+        <form class="content">
+            <label  class="required">First Name:</label><br>
+            <input type="text" maxlength="10" class="data-1"/>
+            <br><br>
+            <label  class="required">Last Name:</label><br>
+            <input type="text" maxlength="10" class="data-2"/>
+            <br><br>
+            <label class="required">Date of Birth:</label><br>
+            <input type="date" required class="data-3"/>
+            <br><br>
+            <label  class="required">Gender:</label><br>
+            <input type="radio" value="male" name="gender"/>Male<br>
+            <input type="radio" value="female" name="gender"/>female<br>
+            <input type="radio" value="others" name="gender"/>others<br>
+            <br><br>
+            <label class="required">Degree</label><br>
+            <select class="data-4">
+                <option>Bachelors</option>
+                <option>Masters</option>
+                <option>Doctorate</option>
+            </select><br><br>
+            <label  class="required">Specialization</label><br>
+            <input type="text" maxlength="40" required class="data-5"/><br><br>
+            <label class="required">Current GPA:</label><br>
+            <input type="number" steps="0.1" max="5" required/><br><br>
+            <label class="required">Phone Number:</label><br>
+            <input type="tel" required/>
+            <br><br>
+            <label class="required" class="required">Address:</label><br>
+            <textarea rows="4" cols="40"></textarea><br>
+            <input type="submit" value="submit" />
+            </form>
+            </div>
+            
+
+
+
+
+        </form>
+    </body>
+
+</html>
